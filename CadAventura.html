@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayCoffee</title>
+  <link rel="stylesheet" href="Categorias.css">
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <button class="Regresar-button" onclick="location.href='index.html'">
+            <img src="Imagenes/Regresar.png" alt="Regresar" class="Regresar">
+          </button>
+      <span>Aventura</span>
+    </div>
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="search-bar" 
+        placeholder="Buscar..." 
+        class="search-bar" 
+        onkeydown="handleKeyDown(event)">
+    </div>
+    <img src="Imagenes/menu.png" alt="Menú" class="menu-icon" onclick="toggleSidebar()">
+  </header>
+
+  <aside id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="acerca.html">Acerca De</a>
+    <a href="correo.html">Correo</a>
+  </aside>
+
+
+  <main class="grid-container">
+    <div class="grid-item">
+      <button class="Regresar-button" onclick="location.href='Doc_Ori.html'">
+      <img src="Imagenes/Ori.jpg" alt="Ori and the Will of the Wisps" class="category-image">
+    </button>
+      <p>Ori and the Will of the Wisps</p>
+    </div>
+    <div class="grid-item">
+      <img src="Imagenes/DiscoEly.webp" alt="disco elysium" class="category-image">
+      <p>disco elysium</p>
+    </div>
+    <div class="grid-item">
+      <img src="Imagenes/Celeste.jpg" alt="Celeste" class="category-image">
+      <p>Celeste</p>
+    </div>
+    <div class="grid-item">
+      <button class="Regresar-button" onclick="location.href='Doc_Un.html'">
+      <img src="Imagenes/Undertale.jpg" alt="Undertale" class="category-image">
+      </button>
+      <p>Undertale</p>
+    </div>
+  </main>
+  <script src="JsPirncipal.Js"></script>
+</body>
+</html>

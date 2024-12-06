@@ -1,0 +1,182 @@
+body {
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    background-color: #fff8e5;
+}
+
+.content {
+    padding: 10px; /* Reduce el espacio alrededor del contenido */
+    margin-top: -20px; /* Mueve el contenido hacia arriba */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7f00;
+    padding: 30px 20px;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Regresar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.Regresar {
+    width: 50px;
+    height: 50px;
+}
+
+.logo span {
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.search-container {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 25px;
+    color: #ff7f00;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ff7f00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #ffd966;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.game-title {
+    text-align: center;
+    color: #ff7f00;
+}
+
+.game-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: row-reverse; /* Cambia la dirección del contenido */
+}
+
+.description {
+    flex: 1; /* Toma una porción más grande si es necesario */
+    margin-right: 20px; /* Espaciado a la derecha */
+}
+
+.game-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0; /* Elimina cualquier margen superior extra */
+    padding-top: 0; /* Asegura que no haya relleno superior */
+}
+
+.game-cover {
+    align-self: flex-start; /* Asegura que la portada esté al inicio */
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: -20px; /* Agrega un margen negativo para subir la imagen */
+}
+
+.info-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.info-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.description {
+    flex: 200; /* Asegura que la descripción ocupe más espacio */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.dropdowns {
+    margin-top: 20px;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+}
+
+.dropdown button {
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #ffd966;
+    padding: 10px;
+    border: 1px solid #ff7f00;
+}

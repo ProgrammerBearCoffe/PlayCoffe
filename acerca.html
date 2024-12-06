@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayCoffee</title>
+  <link rel="stylesheet" href="AcercaDss.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <button class="Regresar-button" onclick="location.href='index.html'">
+            <img src="Imagenes/Regresar.png" alt="Regresar" class="Regresar">
+          </button>
+      <span>ACERCA DE</span>
+    </div>
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="search-bar" 
+        placeholder="Buscar..." 
+        class="search-bar" 
+        onkeydown="handleKeyDown(event)">
+    </div>
+  </header>
+
+  <!-- Contenido "Acerca de" -->
+  <main class="acerca-de">
+    <div class="contenido">
+      <div class="texto">
+        <h2>Acerca De</h2>
+        <p>Esta pagina web, nacio como un proyecto escolar para la materia de taller de investigación 2, utilizando la información investigada en la materia de taller de investigación 1. Con este proyecto, mi visión es hacer un sitio el cual ayude a nuevos 
+          jugadores o para aquellos que quieren experiencias diferentes, de manera que tanto desarrolladores pequeños como los jugadores puedan conocer 
+          aquellas experiencias que no se suelen recomendar como otras.</p>
+        <p>La filosofia que utilize y emplee dentro de esta pagina web, es la insentivación de proyectos pequeños hecho por y para amantes de experiencias mas personales
+           y menos empresarial. Dando en todo lo posible, toda la información necesaria que puede necesitar un usuario para convencerse de comprar un juego de un desarrollador independiente, 
+           de manera que tanto usuario como desarrollador puedan encontrar de manera mucho mas facil, aquel publico interesado en su proyecto.</p>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/acercade.png" alt="Imagen de osito" class="osito">
+      </div>
+    </div>
+  </main>
+  <script src="JsPirncipal.Js"></script>
+</body>
+</html>

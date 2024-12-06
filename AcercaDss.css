@@ -1,0 +1,90 @@
+body {
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    background-color: #fff8e5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7f00;
+    padding: 30px 20px;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Regresar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.Regresar {
+    width: 50px; /* Tamaño del ícono "Regresar" */
+    height: 50px;
+}
+
+.logo span {
+    color: white; /* Texto en blanco para "REGRESAR" */
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.search-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; /* Ancho del buscador */
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 25px;
+    color: #ff7f00;
+  }
+
+  .acerca-de {
+    margin: 5px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Espaciado entre el texto y la imagen */
+}
+
+.texto {
+    flex: 2; /* Reducimos ligeramente el espacio que ocupa el texto */
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.imagen {
+    flex: 2; /* La imagen ahora ocupa más espacio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img {
+    max-width: 90%; /* Permitimos que la imagen crezca más */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+}

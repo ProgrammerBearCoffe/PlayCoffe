@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayCoffee</title>
+  <link rel="stylesheet" href="Doc.css">
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+    }
+
+    function toggleMenu(id) {
+      const menu = document.getElementById(id);
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <button class="Regresar-button" onclick="location.href='CadAventura.html'">
+        <img src="Imagenes/Regresar.png" alt="Regresar" class="Regresar">
+      </button>
+      <span>Undertale</span>
+    </div>
+
+    <div class="search-container">
+        <input 
+          type="text" 
+          id="search-bar" 
+          placeholder="Buscar..." 
+          class="search-bar" 
+          onkeydown="handleKeyDown(event)">
+      </div>
+
+    <img src="Imagenes/menu.png" alt="Menú" class="menu-icon" onclick="toggleSidebar()">
+  </header>
+
+  <aside id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="acerca.html">Acerca De</a>
+    <a href="correo.html">Correo</a>
+  </aside>
+
+  <main class="content">
+    <section class="game-layout">
+      <div class="game-info">
+        <h1 class="game-title">Undertale</h1>
+        <img src="Imagenes/Undertale.jpg" alt="ori and the blind forest" class="game-cover">
+        <table class="info-table">
+          <tr>
+            <td><strong>Desarrollador:</strong></td>
+            <td>Toby Fox</td>
+          </tr>
+          <tr>
+            <tr>
+                <td><strong>Distribuidor:</strong></td>
+                <td>Fangamer y 8-4</td>
+              </tr>
+              <tr>
+                <td><strong>Creador:</strong></td>
+                <td>Toby Fox</td>
+              </tr>
+            <td><strong>Género:</strong></td>
+            <td>Aventura</td>
+          </tr>
+          <tr>
+            <td><strong>Lanzamiento:</strong></td>
+            <td>15 de septiembre de 2015</td>
+          </tr>
+          <tr>
+            <td><strong>Idiomas disponibles:</strong></td>
+            <td>inglés y japonés Oficiales, de manera no oficial varios fans han creado parches de Idiomas</td>
+          </tr>
+          <tr>
+            <td><strong>Plataformas Disponibles:</strong></td>
+            <td>Microsoft Windows,OS X,Linux, PlayStation 4,PlayStation Vita,Nintendo Switch,Xbox One</td>
+          </tr>
+        </table>
+      </div>
+      <div class="description">
+        <h2>Descripción</h2>
+        <p>Undertale es un videojuego de rol en 2D de 2015 creado por el desarrollador independiente estadounidense Toby Fox. El jugador controla a un niño que ha 
+        caído al subsuelo: una gran región aislada bajo la superficie de la Tierra, separada por una barrera mágica. El jugador se encuentra con varios monstruos durante 
+        su viaje de regreso a la superficie, aunque algunos monstruos pueden involucrar al jugador en una pelea. El sistema de combate involucra al jugador navegando a 
+        través de los ataques mini bullet hell por parte del oponente. Se puede optar por pacificar y salvar a los monstruos o someterlos para matarlos. Estas elecciones 
+        afectan el juego, el diálogo, los personajes y la historia cambiando según las elecciones tomadas previamente. </p>
+          
+        <p> Ha sido aclamado por su material temático, sistema de combate intuitivo, partitura musical, originalidad, historia, diálogo y personajes. Además, vendió más
+     de un millón de copias y fue nominado para múltiples elogios y premios. Varias publicaciones y convenciones de juegos incluyeron a Undertale como el juego del año, 
+     y desde entonces otros lo han incluido como uno de los mejores juegos de la década de 2010.</p>
+        
+     <h2>Sistema de juego</h2>
+        <p>En el juego, los jugadores controlan a un niño y completan objetivos para avanzar en la historiaLos jugadores exploran un mundo subterráneo lleno de pueblos y cuevas donde 
+        deben resolver numerosos acertijos en su viaje. El mundo subterráneo es el hogar de monstruos, muchos de los cuales desafían al jugador en combate;los jugadores deciden si matarlos, 
+        huir o hacerse amigo de ellos.Las elecciones hechas por el jugador afectan radicalmente la trama y la progresión general del juego, con la moral del jugador actuando como la piedra 
+        angular para el desarrollo del juego.
+        Cuando los jugadores se encuentran con enemigos en eventos con guiones o encuentros aleatorios, entran en modo de batalla. Durante las batallas, los jugadores controlan un pequeño corazón 
+        que representa su alma, y deben evitar los ataques desatados por el monstruo enemigo similar a un videojuego bullet hell.A medida que avanza el juego, se introducen nuevos elementos, como 
+        obstáculos de colores y batallas de jefes que cambian la forma en que los jugadores controlan el corazón.Los jugadores pueden optar por atacar al enemigo, lo que implica presionar los botones 
+        cronometrados. Matar enemigos hará que el jugador gane EXP (lo que a su vez aumenta su LOVE) y oro. Pueden usar la opción ACT para realizar diversas acciones, que varían según el enemigo.
+        Si el jugador usa las acciones correctas para responder al enemigo, o los ataca hasta que tengan un HP bajo (pero aún con vida), pueden elegir perdonarlos y terminar la lucha sin matarlos.
+        Para que algunos encuentros con jefes se completen pacíficamente, se requiere que el jugador sobreviva hasta que el personaje al que se enfrentan haya terminado su diálogo. El juego presenta múltiples 
+        ramas de historia y finales dependiendo de si los jugadores eligen matar o perdonar a sus enemigos; y como tal, es posible pasar el juego sin matar a un solo enemigo.</p>
+      </div>
+    </section>
+    <section class="dropdowns">
+      <div class="dropdown">
+        <button onclick="toggleMenu('menu1')">Reseñas generales de usuarios</button>
+        <div id="menu1" class="dropdown-content">
+          <h3>La calificación final del juego fue de un 4.2</h3>
+          <h3>Reseñas positivas</h3>
+          <p>En lo que conforman la mayoria de reseñas positivas, hablan sobre la gran banda sonora del videojuego, esto junto con sus mequanicas 
+            simples pero divertidas e incluso desafiante dependiendo de las desiciones del jugador,teniendo acompañado esto a personajes carismaticos
+            que haran facil encariñarse de ellos, esto junto con el corto tiempo de juego que tiene este, haran de esta una disfrutable experiencia 
+            con musica inolvidable.</p>
+          <h3>Reseñas negativas</h3>
+          <p>En lo que conforman la mayoria de reseñas negativas, es en lo simple que puede ser el gameplay a comparación de otros, esto junto a que 
+            si no te sientes atraido a su musica y personajes, puede ser un juego aburrido para algunos, teniendo como mayor critica, su sistema de 
+            desiciones que se hace llamar libre pero mayormente este solo se conforma de positivo neutro y negativo.
+          </p>
+          <p></p>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button onclick="toggleMenu('menu2')">Enlaces</button>
+        <div id="menu2" class="dropdown-content">
+          <h3>Sitios oficiales de distribución.</h3>
+          <p>Página oficial: <a href="https://undertale.com/">https://undertale.com/</a></p>
+          <p>Steam:<a href="https://store.steampowered.com/app/391540/Undertale/">https://store.steampowered.com/app/391540/Undertale/</a></p>
+          <p>PS4: <a href="https://store.playstation.com/en-us/product/UP3893-CUSA08801_00-TFSHVCUTPS400084">https://store.playstation.com/en-us/product/UP3893-CUSA08801_00-TFSHVCUTPS400084</a></p>
+          <p>Xbox: <a href="https://www.xbox.com/en-us/games/store/undertale/9pjggx9xjxpb?wa=wsignin1.0">https://www.xbox.com/en-us/games/store/undertale/9pjggx9xjxpb?wa=wsignin1.0</a></p>
+          <p>Nintendo Switch: <a href="https://www.nintendo.com/us/store/products/undertale-switch/">https://www.nintendo.com/us/store/products/undertale-switch/</a></p>
+        <h3>Fuentes consultadas.</h3>
+        <p>Fuente 1: <a href="https://es.wikipedia.org/wiki/Undertale">https://es.wikipedia.org/wiki/Undertale</a></p>
+        <p>Fuente 2: <a href="https://undertale.com/">https://undertale.com/</a></p>
+      </div>
+      </div>
+      <div class="dropdown">
+        <button onclick="toggleMenu('menu3')">Juegos simulares</button>
+        <div id="menu3" class="dropdown-content">
+          <ul>
+            <li>Omori </li>
+            <li>Yumme nikki</li>
+            <li>Eastward </li>
+            <li>Earthbound</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="JsPirncipal.Js"></script>
+</body>
+</html>

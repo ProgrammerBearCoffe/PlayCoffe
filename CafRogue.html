@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayCoffee</title>
+  <link rel="stylesheet" href="Categorias.css">
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <button class="Regresar-button" onclick="location.href='index.html'">
+            <img src="Imagenes/Regresar.png" alt="Regresar" class="Regresar">
+          </button>
+      <span>Roguelike</span>
+    </div>
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="search-bar" 
+        placeholder="Buscar..." 
+        class="search-bar" 
+        onkeydown="handleKeyDown(event)">
+    </div>
+    <img src="Imagenes/menu.png" alt="Menú" class="menu-icon" onclick="toggleSidebar()">
+  </header>
+
+  <aside id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="acerca.html">Acerca De</a>
+    <a href="correo.html">Correo</a>
+  </aside>
+
+
+  <main class="grid-container">
+    <div class="grid-item">
+      <img src="Imagenes/Hades.jpg" alt="Hades" class="category-image">
+      <p>Hades</p>
+    </div>
+    <div class="grid-item">
+      <img src="Imagenes/Issac.jpg" alt="The Binding of Isaac" class="category-image">
+      <p>The Binding of Isaac</p>
+    </div>
+    <div class="grid-item">
+      <img src="Imagenes/dead.png" alt="Dead Cells" class="category-image">
+      <p>Dead Cells</p>
+    </div>
+    <div class="grid-item">
+      <img src="Imagenes/Ent.jpg" alt="Enter the Gungeon" class="category-image">
+      <p>Enter the Gungeon</p>
+    </div>
+  </main>
+  <script src="JsPirncipal.Js"></script>
+</body>
+</html>

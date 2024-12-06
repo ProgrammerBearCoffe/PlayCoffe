@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayCoffee</title>
+  <link rel="stylesheet" href="Doc.css">
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+    }
+
+    function toggleMenu(id) {
+      const menu = document.getElementById(id);
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <button class="Regresar-button" onclick="location.href='CadAventura.html'">
+        <img src="Imagenes/Regresar.png" alt="Regresar" class="Regresar">
+      </button>
+      <span>Ori And The Blind Forest</span>
+    </div>
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="search-bar" 
+        placeholder="Buscar..." 
+        class="search-bar" 
+        onkeydown="handleKeyDown(event)">
+    </div>
+    <img src="Imagenes/menu.png" alt="Menú" class="menu-icon" onclick="toggleSidebar()">
+  </header>
+
+  <aside id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="acerca.html">Acerca De</a>
+    <a href="correo.html">Correo</a>
+  </aside>
+
+  <main class="content">
+    <section class="game-layout">
+      <div class="game-info">
+        <h1 class="game-title">Ori And The Blind Forest</h1>
+        <img src="Imagenes/Ori.jpg" alt="ori and the blind forest" class="game-cover">
+        <table class="info-table">
+          <tr>
+            <td><strong>Desarrollador:</strong></td>
+            <td>Moon Studios</td>
+          </tr>
+          <tr>
+            <tr>
+                <td><strong>Distribuidor:</strong></td>
+                <td>Microsoft Studios</td>
+              </tr>
+              <tr>
+                <td><strong>Creador:</strong></td>
+                <td>Thomas Mahler</td>
+              </tr>
+            <td><strong>Género:</strong></td>
+            <td>Aventura</td>
+          </tr>
+          <tr>
+            <td><strong>Lanzamiento:</strong></td>
+            <td>11 de marzo de 2016</td>
+          </tr>
+          <tr>
+            <td><strong>Idiomas disponibles:</strong></td>
+            <td>alemán, inglés, francés, italiano, español, japonés, chino simplificado y portugués brasileño</td>
+          </tr>
+          <tr>
+            <td><strong>Plataformas Disponibles:</strong></td>
+            <td>Xbox one,PC,N.Switch</td>
+          </tr>
+        </table>
+      </div>
+      <div class="description">
+        <h2>Descripción</h2>
+        <p>Ori and the Blind Forest es un videojuego de plataforma aventura de un jugador con el estilo de Metroidvania diseñado por Moon Studios,
+         un desarrollador independiente, y publicado por Microsoft Studios. El juego fue lanzado en 11 de marzo de 2015 y en solo 1 semana llegó 
+         al Millón de ventas por Microsoft Windows y Xbox One. Una nueva edición Ori and the Blind Forest: Definitive Edition se lanzó por Xbox One en 11 de marzo de 2016,
+          y por Windows en 27 de abril de 2016. La Edición de Ori and the Blind Forest: Definitive Edition se lanzó para la consola Nintendo Switch en 27 de septiembre de 2019. </p>
+          <p>El videojuego se desarrolló por Moon Studios que no tiene una sede oficina real. Los miembros de equipo de desarrollo son de todo el mundo. El juego fue adquirido 
+        por Microsoft Studios un año después del inicio del desarrollo. La historia del juego se inspiró por El rey león y El gigante de hierro, 
+        mientras unos de los elementos de sistema de juego se inspiró por las franquicias de Rayman y Metroid. </p>
+        <h2>Sistema de juego</h2>
+        <p>El jugador ayudará a Ori a recolectar fragmentos de vida, fragmentos de energía, nuevas habilidades y mejoras. El mundo del juego se revela
+           al jugador al estilo de Metroidvania - a medida que se adquieren nuevas habilidades, los jugadores pueden acceder a áreas que eran inaccesibles 
+           anteriormente. El juego dispone de puntos de guardado (llamados "pozos de espíritu") distribuidos por todo su mundo, además de estos, el jugador
+            puede también crear en cualquier momento "vínculos de alma", los cuales sirven como checkpoints. Sin embargo, los vínculos de alma solo pueden 
+            ser creados utilizando celdas de energía, siendo estas un recurso escaso que debe recolectarse en el juego, el jugador se ve forzado a crear vínculos 
+            de alma solo cuando es realmente necesario.
+           El jugador puede también ganar puntos de habilidad, utilizados para adquirir mejoras y beneficios, como por ejemplo daño incrementado para las Llamas 
+           de Espíritu. Estas mejoras pueden ser compradas solo en los puntos donde se haya creado un Vínculo de Alma y solo si el jugador tiene suficientes puntos 
+           de habilidad para cubrir el costo de la mejora. Eliminando a los enemigos y destruyendo plantas varias que se encuentran en el mundo de juego Ori obtiene
+          puntos de experiencia, un punto de habilidad es ganado solo cuando se obtienen suficientes los puntos de experiencia requeridos para ello.</p>
+      </div>
+    </section>
+    <section class="dropdowns">
+      <div class="dropdown">
+        <button onclick="toggleMenu('menu1')">Reseñas generales de usuarios</button>
+        <div id="menu1" class="dropdown-content">
+          <h3>La calificación final del juego fue de un 4.8</h3>
+          <h3>Reseñas positivas</h3>
+          <p>La mayoria de reseñas positivas resaltan el apartado visual del videojuego, denotando la gran combinación que se encuentra en
+            en combinar el arte 2d con modelos simples en 3d con los cuales se crean grandes escenarios llativos, que parecen salir de la pantalla.
+            Algo mas que se suele destacar es la mecanica de movimiento, el cual se complementa bastante bien con su genero, permitiendo mejorar a 
+            nuestro personaje, mientras a su vez, nos encontramos con niveles llenos de desafios retantes.</p>
+          <h3>Reseñas negativas</h3>
+          <p>Si bien son pocas a comparación de las positivas, estas suelen criticar el movimiento del personaje, la dificultad y en pocas ocaciones
+            el rendimiento del juego, destacando como es que si bien el juego inicia bien, este se siente poco intuitivo, con muy poco de su mismo
+            genero el cual es Metroidvania, destacando que hay mejores que este por menor precio.
+          </p>
+          <p></p>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button onclick="toggleMenu('menu2')">Enlaces</button>
+        <div id="menu2" class="dropdown-content">
+          <h3>Sitios oficiales de distribución.</h3>
+          <p>Página oficial: <a href="https://www.orithegame.com/">https://www.orithegame.com/</a></p>
+          <p>Steam:<a href="https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/">https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/</a></p>
+          <p>Xbox: <a href="https://www.xbox.com/en-US/games/ori-will-of-the-wisps#purchaseoptions">https://www.xbox.com/en-US/games/ori-will-of-the-wisps#purchaseoptions</a></p>
+          <p>Nintendo Switch: <a href="https://www.nintendo.com/us/store/products/ori-and-the-will-of-the-wisps-switch/">https://www.nintendo.com/us/store/products/ori-and-the-will-of-the-wisps-switch/</a></p>
+        <h3>Fuentes consultadas.</h3>
+        <p>Fuente 1: <a href="https://es.wikipedia.org/wiki/Ori_and_the_Blind_Forest">https://es.wikipedia.org/wiki/Ori_and_the_Blind_Forest</a></p>
+        <p>Fuente 2: <a href="https://www.orithegame.com/">https://www.orithegame.com/</a></p>
+      </div>
+      </div>
+      <div class="dropdown">
+        <button onclick="toggleMenu('menu3')">Juegos simulares</button>
+        <div id="menu3" class="dropdown-content">
+          <ul>
+            <li>Blind Forest </li>
+            <li>Bō: Path of the Teal Lotus</li>
+            <li>Sheepo/Islets</li>
+            <li>Afterimage</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="JsPirncipal.Js"></script>
+</body>
+</html>

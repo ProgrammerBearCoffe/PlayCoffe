@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayCoffee</title>
+  <link rel="stylesheet" href="Correoss.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <button class="Regresar-button" onclick="location.href='index.html'">
+            <img src="Imagenes/Regresar.png" alt="Regresar" class="Regresar">
+        </button>
+      <span>Correo</span>
+    </div>
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="search-bar" 
+        placeholder="Buscar..." 
+        class="search-bar" 
+        onkeydown="handleKeyDown(event)">
+    </div>
+  </header>
+
+  <!-- Formulario fuera del header -->
+  <main>
+    <div id="templatemo_contact" class="templatemo_contact">
+        <div class="templatemo_contactform">
+            <div class="templatemo_contacttitle">¡Contactame!</div>
+            <div class="templatemo_sub_contacttitle">Si hay algún error o quieres dar una sugerencia escribe tu mensaje</div>
+            <p>Por favor sé respetuoso.</p>
+            <!-- Eliminamos action y añadimos id al botón -->
+            <form id="contactForm">
+                <input type="text" name="name" id="name" placeholder="NOMBRE">
+                <input type="email" name="mail" id="mail" placeholder="CORREO">
+                <textarea name="message" id="message" placeholder="MENSAJE..."></textarea>
+                <button type="button" id="enviarCorreo" class="btn btn-primary">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+  </main>
+  <script src="JsCorreo.js"></script>
+  <script src="JsPirncipal.Js"></script>
+</body>
+</html>

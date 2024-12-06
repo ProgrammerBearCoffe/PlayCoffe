@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayCoffee</title>
+  <link rel="stylesheet" href="Categorias.css">
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <button class="Regresar-button" onclick="location.href='index.html'">
+            <img src="Imagenes/Regresar.png" alt="Regresar" class="Regresar">
+          </button>
+      <span>Estrategia</span>
+    </div>
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="search-bar" 
+        placeholder="Buscar..." 
+        class="search-bar" 
+        onkeydown="handleKeyDown(event)">
+    </div>
+    <img src="Imagenes/menu.png" alt="Menú" class="menu-icon" onclick="toggleSidebar()">
+  </header>
+
+  <aside id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="acerca.html">Acerca De</a>
+    <a href="correo.html">Correo</a>
+  </aside>
+
+
+  <main class="grid-container">
+    <div class="grid-item">
+      <img src="Imagenes/War.jpeg" alt="Wargroove" class="category-image">
+      <p>Wargroove</p>
+    </div>
+    <div class="grid-item">
+      <img src="Imagenes/Blo.webp" alt="Bloons TD 6" class="category-image">
+      <p>Bloons TD 6</p>
+    </div>
+    <div class="grid-item">
+      <img src="Imagenes/Leg.jpg" alt="Legends of Kingdom Rush" class="category-image">
+      <p>Legends of Kingdom Rush</p>
+    </div>
+    <div class="grid-item">
+      <img src="Imagenes/Bann.jpg" alt="The Banner Saga" class="category-image">
+      <p>The Banner Saga</p>
+    </div>
+  </main>
+  <script src="JsPirncipal.Js"></script>
+</body>
+</html>

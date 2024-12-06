@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayCoffee</title>
+  <link rel="stylesheet" href="CssPrincipal.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="Imagenes/iconoCoffe.png" alt="PlayCoffee Logo" class="logo-icon">
+      <span>PLAYCOFFE</span>
+    </div>
+    
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="search-bar" 
+        placeholder="Buscar..." 
+        class="search-bar" 
+        onkeydown="handleKeyDown(event)">
+    </div>
+
+    <div class="nav-icons">
+      <button class="icon-button" onclick="goToPage('acerca.html')">
+        <img src="Imagenes/IconAcercaDe.png" alt="Acerca de">
+      </button>
+      <button class="icon-button" onclick="goToPage('correo.html')">
+        <img src="Imagenes/IconoEmail.png" alt="Correo">
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="categories">
+      <div class="category">
+        <button class="category-btn" onclick="goToPage('CadAventura.html')">
+        <img src="Imagenes/AdventureCoffe.png" alt="Aventura">
+      </button>
+        <p>Aventura</p>
+      </div>
+      <div class="category">
+        <button class="category-btn" onclick="goToPage('CadAccion.html')">
+          <img src="Imagenes/AccionCoffe.png" alt="Acción">
+        </button>
+        <p>Acción</p>
+      </div>
+      <div class="category">
+        <button class="category-btn" onclick="goToPage('CadEstrategia.html')">
+          <img src="Imagenes/EstrategiaCoffe.png" alt="Estrategia">
+        </button>
+        <p>Estrategia</p>
+      </div>
+      <div class="category">
+        <button class="category-btn" onclick="goToPage('CadSimulacion.html')">
+          <img src="Imagenes/SimulatorCoffe.png" alt="Simulación">
+        </button>
+        <p>Simulación</p>
+      </div>
+      <div class="category">
+        <button class="category-btn" onclick="goToPage('CadRitmo.html')">
+        <img src="Imagenes/RitmoCoffe.png" alt="Ritmo">
+      </button>
+        <p>Ritmo</p>
+      </div>
+      <div class="category">
+        <button class="category-btn" onclick="goToPage('CadArcade.html')">
+        <img src="Imagenes/ArcadeCoffe.png" alt="Arcade">
+      </button>
+        <p>Arcade</p>
+      </div>
+      <div class="category">
+        <button class="category-btn" onclick="goToPage('CafRogue.html')">
+        <img src="Imagenes/roguelikeCoffe.png" alt="Roguelike">
+      </button>
+        <p>Roguelike</p>
+      </div>
+      <div class="category">
+        <button class="category-btn" onclick="goToPage('CadRPG.html')">
+        <img src="Imagenes/RPGCoffe.png" alt="RPG">
+      </button>
+        <p>RPG</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="JsPirncipal.Js"></script>
+</body>
+</html>
